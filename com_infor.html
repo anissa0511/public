@@ -1,0 +1,99 @@
+<div class="content_title">
+                        <div class="des"></div>
+                        <span >企业信息</span>
+                    </div>
+                    <form action="" method="post" class="container content">
+                        <div class="col-lg-6 content_form">
+                            <p><span>*</span>&nbsp;单位名称</p>
+                            <input type=""  placeholder="百变有限公司" id="" value="" />
+                            <p>请与单位有效证件完全一致</p>
+                        </div>
+                        <div class="col-lg-6 content_form">
+                            <p><span>*</span>&nbsp;单位类型</p>
+                            <select id="unit_type">
+                                <option value="" disabled selected>请选择</option>
+                                <option value="企业单位">企业单位</option>
+                                <option value="国防军队">国防军队</option>
+                                <option value="大中院校">大中院校</option>
+                                <option value="政府机构">政府机构</option>
+                                <option value="事业单位">事业单位</option>
+                                <option value="社会团体">社会团体</option>
+                                <option value="境外驻华机构">境外驻华机构</option>
+                                <option value="个体工商户">个体工商户</option>
+                            </select>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="col-lg-6 content_form">
+                            <p><span>*</span>&nbsp;单位证件类型</p>
+                            <select id="unit_type">
+                                <option value="请选择">请选择</option>
+                                <option value="社会统一信用代码证">社会统一信用代码证</option>
+                                <option value="营业执照">营业执照</option>
+                                <option value="组织机构代码证">组织机构代码证</option>
+                                <option value="其他">其他</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-6 content_form">
+                            <p><span>*</span>&nbsp;单位证件号</p>
+                            <input type=""  placeholder="单位证件号" id="" value="" />
+                        </div>
+                        <div class="col-lg-12 content_form">
+                            <p><span>*</span>&nbsp;单位有效证件</p>
+                            <div id="preview">
+                                <div onclick="$('#previewImg').click();">
+                                </div>
+                                <input type="file" onchange="previewImage(this)" style="display: none;" id="previewImg"/>
+                             </div>
+                            <p>支持扩展名：.jpg .png .gif格式（400K以内）</p>
+                        </div>
+                        <div class="col-lg-6 content_form">
+                            <p><span>*</span>&nbsp;单位地址</p>
+                            <div id="unit_address">
+                                <select id="unit_sheng" >
+                                    <option value="" disabled selected>请选择</option>
+                                    <option value="浙江省">浙江省</option>
+                                </select>
+                                <select id="unit_shi">
+                                    <option value="" disabled selected>请选择</option>
+                                    <option value="浙江省">杭州市</option>
+                                </select>
+                                <select id="unit_qu">
+                                    <option value="" disabled selected>请选择</option>
+                                    <option value="浙江省">上城区</option>
+                                </select>
+                                <div id="unit_dizhi" class="text_edit" contenteditable="true"></div>
+                                <p>请填写详细地址</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 content_form">
+                            <p><span>*</span>&nbsp;办公室电话</p>
+                            <input type=""  placeholder="21422212131" id="" value="" />
+                            <p>国家号码（默认：0086）-区号-电话号码</p>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="col-lg-6 content_form">
+                            <p>电子邮件地址</p>
+                            <input type=""  placeholder="et@qq.com" id="" value="" />
+                            <p>此邮箱用于消息通知和消息接收</p>
+                        </div>
+                        <div class="col-lg-6 content_form">
+                            <p><span>*</span>法定代表人姓名</p>
+                            <input type=""  placeholder="陆良" id="" value="" />
+                        </div>
+                        <div class="clear"></div>
+                        <div class="col-lg-6 content_form">
+                            <p><span>*</span>法定代表人手机号</p>
+                            <input type=""  placeholder="2131414131" id="" value="" />
+                        </div>
+                        <div class="col-lg-6 content_form">
+                            <p><span>*</span>法定代表人证件类型</p>
+                            <input type=""  placeholder="身份证" id="" value="" />
+                        </div>
+                        <div class="clear"></div>
+                        <div class="col-lg-6 content_form">
+                            <p><span>*</span>法定代表人证件号</p>
+                            <input type=""  placeholder="2131414131" id="" value="" />
+                        </div>
+                       
+                    </form>
+                
