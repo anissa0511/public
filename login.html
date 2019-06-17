@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+	</head>
+
+	<body>
+		<div class="login third">
+			<div class="title"></div>
+
+			<div class="box">
+				<div class="loginBox password">
+					<div class="tip"></div>
+					<div class="loginTitle">
+						密码登录
+					</div>
+					<div class="loginInput">
+						<img src="img/login/person.png" />
+						<input type="text" name="" id="" value="" placeholder="用户名" />
+					</div>
+					<div class="loginInput">
+						<img src="img/login/lock.png" />
+						<input type="text" name="" id="" value="" placeholder="密码" />
+					</div>
+					<div class="code">
+						<input id="t1" type="text" name="u" placeholder="请输入验证码" />
+						<span id="discode" onClick="createCode()"></span>
+					</div>
+					<div>
+						<a>忘记密码？</a>
+					</div>
+					<div class="loginInput loginBtn" >
+						登录
+					</div>
+					<div>
+						<div>
+							<a>
+								<img src="img/login/wechat.png" width="30" /> <span class="chatBtn" value="1">微信登录</span>
+							</a>
+						</div>
+						<a class="chatBtn" value="2">用户注册</a>
+					</div>
+				</div>
+				<div class="loginBox weBox">
+					<img class="tipImg" src="img/login/tip.png" />
+					<div class="tip"></div>
+					<div class="loginTitle">
+						微信扫码 安全登录
+					</div>
+					<div class="code" id="code">
+
+					</div>
+					<div class="text">
+						<span>打开微信 扫一扫登录</span>
+						<span><a class="chatBtn" value="0">密码登录</a>|<a class="chatBtn" value="2">用户注册</a></span>
+					</div>
+				</div>
+				<div class="loginBox registe">
+					<div class="loginTitle">
+						注册
+					</div>
+					<div class="infor">
+						<div class="">
+							<div class="left">
+								<span>*</span> 用户名
+							</div>
+							<div class="right">
+								<input type="text" class="user" placeholder="6~18个字符，可使用字母、数字、下划线，以字母开头" />
+							</div>
+						</div>
+						<div>
+							<div class="left">
+								<span>*</span>密码
+							</div>
+							<div class="right">
+								<input type="text" class="pwd" placeholder="6~16位任意字母、数字、特殊字符组合，区分大小写" />
+							</div>
+						</div>
+						<div>
+							<div class="left">
+								<span>*</span>密码确认
+							</div>
+							<div class="right">
+								<input type="text" class="pwdAffirm" />
+							</div>
+						</div>
+						<div>
+							<div class="left">
+								<span>*</span> 手机号码
+							</div>
+							<div class="right">
+								<input type="text" class="phone" />
+							</div>
+						</div>
+						<div>
+							<div class="left">
+								<span>*</span>邮箱
+							</div>
+							<div class="right">
+								<input type="text" class="mail" />
+							</div>
+						</div>
+						<div class="getCode">
+							<div class="left">
+								<span>*</span>手机验证码
+							</div>
+							<div class="right">
+								<input type="text" class="phoneText" />
+							</div>
+							<button type="button" class="phoneQR">获取验证码</button>
+
+						</div>
+						<div>
+							<div class="left">
+							</div>
+							<button class="right registe" id="registe" data-toggle="modal">
+								注册
+							</button>
+						</div>
+						<div>
+							<div class="left">
+							</div>
+							<div>
+								<a>
+									<img src="img/login/wechat.png" width="30"> <span style="display: inherit;" class="chatBtn" value="1">微信登录</span>
+								</a>
+								<span>|</span>
+								<a class="chatBtn" value="0">密码登录</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">为保证您的资料正常录入，建议使用IE浏览器(9版本以上)、谷歌浏览器、360浏览器！</div>
+		</div>
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+						<h4 class="modal-title" id="myModalLabel">
+					提示
+				</h4>
+					</div>
+					<div class="modal-body">
+						<div class="loginSucc">
+							<img src="img/login/green.png" width="50" />
+							<div>注册成功</div>
+						
+						<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+						</button>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>
