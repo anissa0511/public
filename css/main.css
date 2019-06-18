@@ -422,3 +422,99 @@ a:hover{
     display: flex;
     justify-content: center;
 }
+/*首次登录*/
+
+.nav {
+	width: 100%;
+	height: 64px;
+	display: flex;
+	align-items: center;
+	background: #fff;
+	border-bottom: solid 1px #e9e9e9;
+	box-sizing: border-box;
+}
+
+.nav_title {
+	height: 64px;
+	background: #00284d;
+	color: #fff;
+	line-height: 64px;
+	text-align: center;
+	font-size: 20px;
+	overflow: hidden;
+	cursor: default;
+	width: 256px;
+}
+
+.main_scroll {
+	background: #f0f2f5;
+}
+
+.pick {
+	padding: 24px;
+	background: #fff;
+	border: solid 1px #e9e9e9;
+}
+
+.pick_content {
+	margin: 20px 0;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.pick_content .flex>div {
+	width: calc(50% - 24px);
+	box-sizing: border-box;
+	height: 100px;
+	background: #e8f0fe;
+	border: #dddddd 1px solid;
+	padding: 12px 24px;
+	box-sizing: border-box;
+	vertical-align: middle;
+	position: relative;
+	margin-bottom: 24px;
+}
+
+.pick_content .flex>div input {
+	position: absolute;
+	top: calc(50% - 4px);
+	margin: 0;
+}
+
+.pick_content .flex>div:nth-of-type(odd) {
+	margin-right: 48px;
+}
+
+.flex-5 {
+	display: flex;
+}
+
+.flex-5>div {
+	display: inline-block;
+}
+
+.img {
+	width: 70px;
+	height: 70px;
+	background: #00a2ff url(../img/first_login/web.png)no-repeat center center;
+	border-radius: 20px;
+	margin: 0 20px 0 30px;
+}
+
+.img1 {
+	background: #00a2ff url(../img/first_login/app.png)no-repeat center center;
+}
+
+.flex1 {
+	border-bottom: solid 1px #e9e9e9;
+	margin-bottom: 50px;
+	padding-bottom: 30px;
+}
+
+.text>p {
+	color: rgba(0, 0, 0, .45);
+	font-size: 14px;
+}
