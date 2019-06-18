@@ -122,6 +122,8 @@ $(function() {
 //			$("#registe").click();
 		}
 
-	})
+	});
+	
+
 
 })

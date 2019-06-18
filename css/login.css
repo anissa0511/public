@@ -326,13 +326,14 @@ input::-webkit-input-placeholder {
 
 .modal-dialog {
 	position: absolute;
-	left: calc(50% - 300px);
+	left: calc(50% - 200px);
 	top: 200px;
 }
 
 .modal-content {
 	border-radius: 0;
 	cursor: default;
+	box-shadow: 0px 3px 10px 0px rgba(26, 24, 25, 0.3);
 }
 
 .modal-header {
@@ -346,16 +347,29 @@ input::-webkit-input-placeholder {
 
 .loginSucc>div {
 	margin: 10px 0;
-	font-size: 18px;
+	padding-left: 30px;
+	font-size: 14px;
+	font-weight: 400;
+	color: rgba(102, 102, 102, 1);
+}
+
+.loginSucc h1 {
+	text-align: right;
 }
 
 .modal-content .btn.btn-default {
 	display: inline-block;
 	background: #1890ff;
 	color: #fff;
-	font-weight: bold;
-	margin: 20px;
+	font-weight: 400;
 	padding: 5px 15px;
+	border: none;
+	min-width: 100px;
+	letter-spacing: 4px;
+}
+
+.modal-dialog {
+	width: 420px;
 }
 
 .modal-title {
@@ -365,10 +379,16 @@ input::-webkit-input-placeholder {
 }
 
 .loginSucc {
-	text-align: center;
 	font-size: 18px;
 	color: #000000;
-	margin-bottom: 20px;
+}
+
+.loginSucc span {
+	font-size: 16px;
+	font-weight: bold;
+	color: rgba(54, 63, 69, 1);
+	letter-spacing: 5px;
+	margin-left: 10px;
 }
 
 button.close {
@@ -383,6 +403,11 @@ button.close:hover {
 .modal-header .close {
 	margin-top: 10px;
 	margin-right: 10px;
+}
+
+.modal-body {
+	padding: 25px 40px;
+	box-sizing: border-box;
 }
 
 @media screen and (max-width: 1556px) {

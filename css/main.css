@@ -230,18 +230,19 @@ a:hover{
 .setting{
     position: relative;
 }
-.set_float{
-    display: none;
-    position: absolute;
-    right: 0;
-    top: 50px;
-    width: 160px;
-    height: 106px;
-    border-radius: 4px;
-    border: 1px solid #d9d9d9;
-    background: #fff;
-    padding: 4px;
-    z-index: 999;
+
+.set_float {
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 50px;
+	width: 160px;
+	height: 106px;
+	border-radius: 4px;
+	border: 1px solid #d9d9d9;
+	background: #fff;
+	padding: 4px;
+	z-index: 9999;
 }
 .set_float li{
     line-height: 32px;
