@@ -16,11 +16,28 @@ $(function() {
     
     //  菜单点击跳转
     slide_left_click(); 
+    
+//  修改保存
+    rewrite_save();
 });
-
+    
+function rewrite_save(){
+     $(document).on('click', '.btn_rewrite', function() {
+         $(this).parents().find('.main_content').find('.content').css('display','block');
+         $(this).parents().find('.main_content').find('.content_readonly').css('display','none');
+     });
+//  $('.rewrite').live('click',function(){
+//      console.log(111)
+//      
+//  });
+    $(document).on('click', '.btn_save', function() {
+        $(this).parents().find('.main_content').find('.content').css('display','none');
+        $(this).parents().find('.main_content').find('.content_readonly').css('display','block');
+    });
+}
 function slide_left_click(){
-    $('.nav_link_sec').on('click',function(){
-        let value = $(this).attr('data-value');
+    $('.s_secondNav').on('click',function(){
+        let value = $(this).find('a').attr('data-value');
         switch(value){
             case 'com_infor': 
                 com_infor_click();
